@@ -10,7 +10,7 @@ def calculate_profit(ask, bid, ask_fee, bid_fee):
 
 # load data
 def load_csv(symbol, exchange):    
-    return pd.read_csv("data/orderbook"+exchange+symbol+".csv", parse_dates=True, sep = ",", index_col=0)
+    return pd.read_csv("data/orderbook"+exchange.capitalize()+symbol+".csv", parse_dates=True, sep = ",", index_col=0)
 
 # weight orderbook
 def get_weight_val(row, side, amount):
@@ -84,6 +84,7 @@ exchanges = [
     "poloniex",
     "yobit"
 ]
+exchanges = ["bitstamp", "bittrex"]
 min_percentual_profit = 0.0001
 usd_min_profit = 0.001
 usd_per_trade = 1000
@@ -143,6 +144,7 @@ symbols = [
     "XLMEUR",
     "ADAUSDT"
 ]
+symbols = ["XRPUSD"]
 
 # useful variables
 
