@@ -88,6 +88,7 @@ exchanges = ["bitstamp", "bittrex"]
 min_percentual_profit = 0.0001
 usd_min_profit = 0.001
 usd_per_trade = 1000
+# considering btc/usd fixed, is equivalent to set a fixed amount in btc
 btc_price = 6500
 period = 30
 symbols = [
